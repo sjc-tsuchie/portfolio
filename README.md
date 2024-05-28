@@ -5,20 +5,29 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+# version
 
-* System dependencies
+|name|version|
+|:---|:---|
+|Ruby| 3.3.0|
+|Ruby on Rails| 7.1.3.2|
 
-* Configuration
+# 環境構築手順
 
-* Database creation
+1. DockerDesktopをインストールする
+	- https://www.docker.com/products/docker-desktop/
 
-* Database initialization
+1. git cloneする
 
-* How to run the test suite
+	`git clone git@github.com:sjc-tsuchie/portfolio.git`
+  
 
-* Services (job queues, cache servers, search engines, etc.)
+1. dockerイメージを作成する
 
-* Deployment instructions
+	`docker compose build --no-cache`
 
-* ...
+1. dockerコンテナを起動する
+
+ 	`docker compose up`
+
+1. http://localhost:3000/ にアクセスできることを確認する
